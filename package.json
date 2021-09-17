@@ -2,7 +2,7 @@
   "name": "image-finder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vladislav-kulachko.github.io/image-finder",
+  "homepage": "https://vladislav-kulachko.github.io/goit-react-hw-04-hooks-images",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",

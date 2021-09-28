@@ -13,16 +13,17 @@ export default function ImageGalleryItem({
 
   return (
     <>
-      {images.map(({id, webformatURL, largeImageURL, tags}, i) => (
-        <li key={i} id={id} className={s.item} onClick={onOpenModal}>
-          <img
-            src={webformatURL}
-            data-src={largeImageURL}
-            alt={tags}
-            className={s.image}
-          />
-        </li>
-      ))}
+      {images.length >= 1 &&
+        images.map(({id, webformatURL, largeImageURL, tags}, i) => (
+          <li key={i} id={id} className={s.item} onClick={onOpenModal}>
+            <img
+              src={webformatURL}
+              data-src={largeImageURL}
+              alt={tags}
+              className={s.image}
+            />
+          </li>
+        ))}
     </>
   );
 }
